@@ -3,80 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maheera Salon & Makeup</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Faree of Words</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #2f5d73;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        header h1 {
+            font-size: 36px;
+        }
+        header p {
+            font-size: 16px;
+            color: #d4d4d4;
+        }
+        section {
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            padding: 30px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        h2 {
+            text-align: center;
+            color: #2f5d73;
+            margin-bottom: 20px;
+        }
+        p {
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background: #f1f1f1;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 6px;
+            text-align: center;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+        }
+        .stats div {
+            background: #f1f1f1;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+        footer {
+            background: #2f5d73;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 28px; }
+        }
+    </style>
 </head>
 <body>
-    <header class="header">
-        <h1>Maheera Salon & Makeup</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+
+    <!-- Header Section -->
+    <header>
+        <img src="profile.jpg" alt="Faree of Words">
+        <h1>Faree of Words</h1>
+        <p>Versatile Writer • Fashion Enthusiast • Inspiration Seeker</p>
     </header>
 
-    <section id="about" class="about">
-        <h2>About Us</h2>
-        <p>Welcome to Maheera Salon & Makeup! We are dedicated to enhancing your beauty with professional care and expertise.</p>
-    </section>
-
-    <section id="services" class="services">
-        <h2>Our Services</h2>
-        <div class="service-list">
-            <div class="service-item">
-                <h3>Hair Styling</h3>
-                <p>Professional haircuts and blow-drying services.</p>
-            </div>
-            <div class="service-item">
-                <h3>Makeup</h3>
-                <p>Bridal and party makeup for any occasion.</p>
-            </div>
-            <div class="service-item">
-                <h3>Skincare</h3>
-                <p>Facials and treatments for glowing skin.</p>
-            </div>
+    <!-- About Section -->
+    <section>
+        <h2>About Me</h2>
+        <p>I am a versatile writer and fashion enthusiast weaving words into worlds. An inspiration seeker who shares poems from time to time, creating art through both language and style.</p>
+        <div class="stats">
+            <div><strong>8</strong><br>Posts</div>
+            <div><strong>308</strong><br>Followers</div>
+            <div><strong>207</strong><br>Following</div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" placeholder="Your Name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Your Email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" placeholder="Your Message" required></textarea>
-
-            <button type="submit">Send</button>
-        </form>
+    <!-- Skills Section -->
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>Creative Writing & Poetry</li>
+            <li>Fashion Styling & Consulting</li>
+            <li>Social Media Content Creation</li>
+            <li>Public Speaking</li>
+        </ul>
     </section>
-    <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your Name" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Your Email" required>
+    <!-- Services Section -->
+    <section>
+        <h2>Services</h2>
+        <ul>
+            <li>Custom Poetry for Events</li>
+            <li>Fashion & Style Consultation</li>
+            <li>Social Media Brand Promotion</li>
+            <li>Inspirational Speaking Engagements</li>
+        </ul>
+    </section>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+    <!-- Instagram Gallery Section -->
+    <section>
+        <h2>Instagram Gallery</h2>
+        <div class="gallery">
+            <img src="post1.jpg" alt="Post 1">
+            <img src="post2.jpg" alt="Post 2">
+            <img src="post3.jpg" alt="Post 3">
+            <img src="post4.jpg" alt="Post 4">
+            <img src="post5.jpg" alt="Post 5">
+            <img src="post6.jpg" alt="Post 6">
+        </div>
+        <p>Follow me on Instagram: <a href="https://www.instagram.com/fareeofwords" target="_blank">@fareeofwords</a></p>
+    </section>
 
-        <button type="submit">Send</button>
-    </form>
-</section>
+    <!-- Contact Section -->
+    <section>
+        <h2>Contact</h2>
+        <p>muneerfareedah1@gmail.com</p>
+        <p>Instagram: <a href="https://www.instagram.com/fareeofwords" target="_blank">@fareeofwords</a></p>
+    </section>
 
-
-    <footer class="footer">
-        <p>&copy; 2024 Maheera Salon & Makeup. All rights reserved.</p>
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Faree of Words | All Rights Reserved
     </footer>
+    <!-- Review Section -->
+<div style="max-width: 600px; margin: 40px auto; padding: 20px; border: 1px solid #ddd; border-radius: 12px; background-color: #fff; font-family: Arial, sans-serif; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+    <h2 style="text-align: center; color: #333; margin-bottom: 20px;">What Our Customers Say</h2>
 
-    <script src="script.js"></script>
+    <div style="display: flex; align-items: flex-start; gap: 15px;">
+        <!-- Review Text -->
+        <div>
+            <p style="font-size: 16px; color: #555; margin: 0;">
+                ⭐⭐⭐⭐⭐<br>
+                "This service was amazing! The work was professional, fast, and exceeded my expectations. I’ll definitely recommend to others."
+            </p>
+            <p style="margin-top: 8px; font-size: 14px; color: #777;"><strong>- Faree of Words</strong></p>
+        </div>
+    </div>
+</div>
+<!-- Review Image -->
+        <img src="review image.jpg" alt="Customer Review" style="width: 400px; height: 700px; border-radius: 20%; object-fit: cover;">
+
+
 </body>
 </html>
